@@ -5,9 +5,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f6f4f1;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  font-family: 'NeueWorld_Condensed';
+  src: url('./fonts/NeueWorld/PPNeueWorld-CondensedRegular.otf');
+}
+
+@font-face {
+  font-family: 'NeueWorld';
+  src: url('./fonts/NeueWorld/PPNeueWorld-Regular.otf');
+}
+
+@font-face {
+  font-family: 'NeueWorld_Bold';
+  src: url('./fonts/NeueWorld/PPNeueWorld-SemiCondensedUltrabold.otf');
+}
+
+@font-face {
+  font-family: 'NeueWorld_CondensedLight';
+  src: url('./fonts/NeueWorld/PPNeueWorld-SuperCondensedLight.otf');
 }

@@ -1,0 +1,55 @@
+@import '../../variables.scss';
+
+.nav {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: #262525;
+
+  // @media only screen and (max-width: 480px) {
+  //   width: 480px;
+  // }
+
+  .main {
+    justify-content: center;
+    position: relative;
+    align-items: center;
+
+    h1 {
+      font-family: $navbar-logo-font;
+      font-size: $navbar-logo-size;
+      letter-spacing: $navbar-logo-spacing;
+      font-weight: $navbar-logo-weight;
+      color: $navbar-logo-color;
+      outline: solid 1px white;
+      outline-offset: -20px;
+    }
+  }
+
+  .secondary {
+    justify-content: space-evenly;
+    position: relative;
+    align-items: center;
+
+    button {
+      font-family: $navbar-font;
+      font-size: $navbar-size;
+      letter-spacing: $navbar-spacing;
+      font-weight: $navbar-weight;
+      color: $navbar-color;
+      transition: $navbar-transition;
+
+      background-color: $navbar-button-color;
+      background-repeat: $navbar-button-repeat;
+      border: $border;
+      cursor: $cursor;
+      overflow: $overflow;
+      outline: $outline;
+    }
+
+    button:hover {
+      text-decoration: line-through;
+    }
+  }
+}

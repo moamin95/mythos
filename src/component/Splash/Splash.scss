@@ -1,0 +1,146 @@
+@import '../../variables.scss';
+
+.splash {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: $desktop-system-width;
+  border-right: 3px solid black;
+  border-top: 1px solid black;
+}
+
+.splash-heading {
+  font-family: $splash-font-light;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: 14px;
+  text-align: center;
+  margin: 0 0 100px 0;
+}
+
+.splash.blurb {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px;
+
+  .splash-subtext-left {
+    max-width: 40%;
+    border-right: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    button {
+      &.primary {
+        background-color: $navbar-button-color;
+        background-repeat: $navbar-button-repeat;
+        border: $border-primary;
+        cursor: $cursor;
+        overflow: $overflow;
+        outline: $outline;
+        font-family: $button-font;
+        font-size: 46px;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 10px;
+        letter-spacing: 10px;
+        transition: 0.2s;
+      }
+
+      &:hover {
+        background-color: $hover-background;
+        color: $hover-color;
+      }
+    }
+
+    .author-blurb {
+      padding-top: 50px;
+      h2 {
+        font-family: $oswald;
+        text-transform: uppercase;
+        text-decoration: underline;
+      }
+      p {
+        text-align: justify;
+        letter-spacing: 2px;
+        padding-right: 20px;
+      }
+    }
+  }
+
+  .splash-subtext-right {
+    max-width: 50%;
+    position: relative;
+
+    .picture-heading {
+      text-transform: uppercase;
+      font-size: 3em;
+      position: absolute;
+      top: -9%;
+      left: -10%;
+      z-index: 10;
+      color: black;
+      letter-spacing: -2px;
+      background-color: #f6f4f1;
+    }
+
+    img {
+      width: 500px;
+      height: 750px;
+      object-fit: contain;
+      opacity: 0.9;
+
+      &:hover {
+        filter: blur(5px);
+      }
+    }
+
+    .hover-subtitle {
+      position: absolute;
+      top: 20%;
+      left: 5%;
+      font-family: $oswald;
+      color: white;
+      text-transform: uppercase;
+      transition: 0.3s;
+    }
+
+    .credit {
+      position: absolute;
+      font-family: $oswald;
+      top: 97%;
+    }
+
+    .picture-title {
+      font-family: 'NeueWorld_CondensedLight', serif;
+      text-transform: uppercase;
+      font-size: 6em;
+      font-weight: 300;
+      letter-spacing: 14px;
+      text-align: left;
+      margin: 0 0 100px 0;
+      position: absolute;
+      top: 70%;
+      left: 5%;
+      color: white;
+      border-bottom: 1px solid white;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .splash-subtext {
+    font-family: $oswald;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 21px;
+    text-align: justify;
+  }
+}

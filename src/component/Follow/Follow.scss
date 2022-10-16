@@ -1,0 +1,75 @@
+@import '../../variables.scss';
+
+.follow-main {
+  width: $desktop-system-width;
+
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  justify-content: flex-start;
+  border-top: 3px solid black;
+  border-left: 1px solid black;
+  border-bottom: 2px solid black;
+}
+
+.follow-left {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.follow-right {
+  padding: 20px;
+  z-index: 1;
+
+  h2 {
+    font-family: $splash-font-light;
+    font-size: 62px;
+    letter-spacing: $navbar-logo-spacing;
+    font-weight: $navbar-logo-weight;
+    color: black;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .underline {
+    height: 5px;
+    border-bottom: 3px solid black;
+  }
+
+  p {
+    font-family: $oswald;
+    text-align: justify;
+    font-size: 22px;
+
+    span {
+      text-decoration: underline;
+    }
+  }
+  .citation {
+    font-size: 8px;
+  }
+}
+
+.link-button {
+  background-color: $navbar-button-color;
+  background-repeat: $navbar-button-repeat;
+  border: $border-primary;
+  cursor: $cursor;
+  overflow: $overflow;
+  outline: $outline;
+  font-family: $button-font;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 0;
+  margin-top: 50px;
+  letter-spacing: 10px;
+  transition: 0.2s;
+  width: 400px;
+
+  &:hover {
+    background-color: $hover-background;
+    color: $hover-color;
+  }
+}
