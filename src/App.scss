@@ -1,0 +1,17 @@
+@import './variables.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: $desktop-system-width;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-color: #f6f4f1;
+}

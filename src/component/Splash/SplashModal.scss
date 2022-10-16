@@ -1,0 +1,93 @@
+@import '../../variables.scss';
+
+.splashmodal-container {
+  width: $tablet-system-width;
+  height: 300px;
+  top: 20%;
+  border: 1px solid black;
+  outline-style: solid;
+  position: absolute;
+  background: #f6f4f1;
+  z-index: 9999;
+}
+
+.close-button {
+  position: absolute;
+  right: 0%;
+  background-color: $navbar-button-color;
+  background-repeat: $navbar-button-repeat;
+  border: none;
+  cursor: $cursor;
+  overflow: $overflow;
+  outline: $outline;
+  font-size: 32px;
+  margin: 0;
+  right: 1%;
+  top: -2%;
+  transition: all 0.1s ease-in;
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+.header {
+  padding: 10px;
+  width: 65%;
+
+  h1 {
+    font-family: $oswald;
+    font-size: 36px;
+    margin: 0px;
+    border-bottom: 2px solid black;
+  }
+}
+
+.subheading {
+  padding: 10px;
+  p {
+    font-family: $oswald;
+  }
+}
+
+.email-input {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  input {
+    width: 500px;
+    height: 58px;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 24px;
+    font-family: $oswald;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .subscribe-button {
+    background-color: $navbar-button-color;
+    background-repeat: $navbar-button-repeat;
+    border: $border-primary;
+    cursor: $cursor;
+    overflow: $overflow;
+    outline: $outline;
+    font-family: $button-font;
+    font-size: 46px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 10px;
+    letter-spacing: 10px;
+    transition: 0.2s;
+
+    &:hover {
+      text-decoration: underline;
+      scale: 1.1;
+    }
+  }
+}

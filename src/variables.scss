@@ -1,0 +1,63 @@
+//Imports
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+//Breakpoint Variables
+$desktop-system-width: 1024px;
+$tablet-system-width: 768px;
+
+//Navbar Variables
+$navbar-logo-font: 'NeueWorld', serif;
+$navbar-logo-size: 24px;
+$navbar-logo-spacing: 0.3rem;
+$navbar-logo-weight: 300;
+$navbar-logo-color: #f6f4f1;
+
+$navbar-font: 'NeueWorld_Condensed', serif;
+$navbar-size: 14px;
+$navbar-spacing: 0.3rem;
+$navbar-weight: 300;
+$navbar-color: #f6f4f1;
+$navbar-transition: 0.5s;
+
+//Button Variables
+$navbar-button-color: transparent;
+$navbar-button-repeat: no-repeat;
+$border: none;
+$cursor: pointer;
+$overflow: hidden;
+$outline: none;
+$button-font: $navbar-logo-font;
+$border-primary: 1px solid black;
+$hover-background: black;
+$hover-color: white;
+
+//Button Mixins
+@mixin scrollToButton {
+  background-color: transparent;
+  border: none;
+  position: sticky;
+  bottom: 10%;
+  margin-right: 1024px;
+  font-size: 24px;
+  z-index: 1;
+  cursor: pointer;
+  color: black;
+  font-family: $splash-font-light;
+  transform: rotate(270deg);
+  text-transform: lowercase;
+  width: 100px;
+  border-bottom: 1px solid black;
+  transition: all 0.5s ease;
+
+  &:hover {
+    text-decoration: line-through;
+  }
+}
+
+//Font Variables
+$splash-font-light: 'NeueWorld_CondensedLight', serif;
+$oswald: 'Oswald', sans-serif;
+
+//Duration
+$duration: 30s;

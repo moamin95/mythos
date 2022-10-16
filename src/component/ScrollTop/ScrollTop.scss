@@ -1,0 +1,5 @@
+@import '../../variables.scss';
+
+.scrollTop {
+  @include scrollToButton;
+}
